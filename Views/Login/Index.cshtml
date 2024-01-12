@@ -1,0 +1,63 @@
+@model User
+<style>
+  body {
+    background-color: rgb(132, 218, 218);
+  }
+</style>
+<section class="vh-100 bg-image">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <div class="notify">@ViewBag.User</div>
+                            <p class="text-uppercase text-center mb-5" style="font-size: 2rem;";">Login</p>
+
+
+              <form method="post">
+
+    
+                <div class="form-outline mb-4">
+                  <input type="text" asp-for="Name" style="background-color: rgb(204, 199, 199);"
+                    class="form-control form-control-lg" required />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                  <label class="form-label">Username</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="password" asp-for="password" style="background-color: rgb(204, 199, 199);"
+                    class="form-control form-control-lg" required />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                  <label class="form-label">Password</label>
+
+                </div>
+                <div class="nav-item ">
+                  <button class="btn btn-success nav-ulnk" type="submit" style="margin-left: 15.6rem;">Login</button>
+                </div>
+
+              </form>
+              @* <div class="col">
+                <!-- Simple link -->
+                <a asp-controller="Login" asp-action="ForgotPassword">Forgot password?</a>
+                <ul class="nav-item">
+                  <a style="margin-left:200px;" class="btn btn-dark nav-ulnk" asp-area="" asp-controller="Signup"
+                    asp-action="Users">Signup</a> *@
+              </div>
+            </div>
+            <span class="text-danger" style="margin-left: 18rem; margin-bottom: 2rem;">@ViewData["Notify"]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+@section Scripts{
+  <partial name="_ValidationScriptsPartial" />
+}
+
+<script>
+    setTimeout(function() {
+        $('.notify').fadeOut('slow');},5000);
+</script>

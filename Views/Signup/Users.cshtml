@@ -1,0 +1,82 @@
+@* @model NewUser
+<style>
+  body {
+    background-color: rgb(132, 218, 218);
+  }
+</style>
+<section class="vh-100 bg-image">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <p class="text-uppercase text-center mb-5" style="font-size: 2rem;" ;">Create an account</p>
+
+
+              <form method="post">
+
+
+                <div class="form-outline mb-4">
+                  <input type="text" asp-for="Name" minlength="3" maxlength="10"
+                    style="background-color: rgb(204, 199, 199);" class="form-control form-control-lg" required />
+                  <span asp-validation-for="Name" class="text-danger"></span>
+                  <label class="form-label">Username</label>
+                </div>
+
+
+
+                <div class="form-outline mb-4">
+                  <input type="password" asp-for="password" style="background-color: rgb(114, 92, 105);"
+                    class="form-control form-control-lg" required />
+                  <span asp-validation-for="password" class="text-danger"></span>
+                  <label class="form-label">Password</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" asp-for="reenteredpassword" style="background-color: rgb(114, 92, 105);"
+                    class="form-control form-control-lg" required />
+                  <span asp-validation-for="password" class="text-danger"></span>
+                  <label class="form-label">Repeat your password</label>
+                </div> *@
+
+                @* <div class="form-outline mb-4">
+                  <input type="email" asp-for="emailaddress" style="background-color: rgb(204, 199, 199);"
+                    class="form-control form-control-lg" required />
+                  <span asp-validation-for="emailaddress" class="text-danger"></span>
+                  <label class="form-label">Email address</label>
+                </div> *@
+
+                @* <div class="form-outline mb-4">
+                  <input type="text" asp-for="UserId" style="background-color: rgb(204,199,199);"
+                    class="form-control form-control-lg" />
+                  <span asp-validation-for="UserId" class="text-danger"></span>
+                  <label class="form-label"> UserId</label>
+                </div> *@
+                @* <div class="form-outline mb-4">
+                  <input type="number" asp-for="floor" style="background-color: rgb(204,199,199);"
+                    class="form-control form-control-lg" required />
+                  <span asp-validation-for="floor" class="text-danger"></span>
+                  <label class="form-label">Floor</label>
+                </div>
+
+
+
+
+                <div class="nav-item ">
+                  <button class="btn btn-success nav-ulnk" type="submit" style="margin-left: 15rem;">Register</button>
+                </div>
+
+
+                @* <p class="text-center text-muted mt-5 mb-0">Have already an account? <a asp-controller="Login"
+                    asp-action="Index" class="fw-bold text-body "><u>Login here</u></a></p> *@
+@* 
+              </form>
+              <span class="text-danger">@ViewData["Notify"]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> *@

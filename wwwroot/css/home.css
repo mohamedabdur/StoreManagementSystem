@@ -1,0 +1,238 @@
+
+
+
+:root{
+    --border:2px solid black;
+}
+
+*{
+    margin:0;padding: 0;
+    box-sizing: border-box;
+    outline:none;border:none;
+    /* overflow-x: hidden; */
+}
+html{
+    font-size: 60%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header{
+    width: 100%;
+    /* border: 2px solid black; */
+    /* background-color: rgb(136, 119, 134); */
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    align-items: center;
+}
+.logo{
+    display: flex;
+}
+.header .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:70%;
+    /* border:2px solid black; */
+
+}
+
+.header .menu a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+.header .menu a:hover {
+    font-size: 2.3rem;
+}
+.content{
+    width: 30%;
+    margin-top: 20rem;
+    margin-left: 15rem;
+    margin-bottom: 10rem;
+    /* border:var(--border); */
+}
+
+.content h3{
+    font-size: 1.5rem;
+}
+
+.content h1{
+    margin-top: 4rem;
+    font-size: 5rem;
+}
+
+.content p{
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.content button{
+    width: 15rem;
+    margin-top: 3rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: .7rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.content button:hover{
+    /* width: 15.5rem;
+    height: 4.3rem; */
+  transform: translateY(-.2rem);
+}
+.whole{
+display: flex;
+/* border: 2px solid black; */
+background-color: bisque;
+overflow: hidden;
+/* height: 80rem; */
+}
+
+.home-image{
+    margin-top: 20rem;
+    margin-left: 40rem;
+    /* border: 1px dotted black; */
+}
+.description{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: bisque;    
+}
+.description img{
+    /* border: 2px solid rgb(37, 13, 13); */
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+    margin-top: 4rem;
+    width: 25rem;
+    align-items: center;
+}
+.home-des img{
+    /* border: 2px solid rgb(37, 13, 13); */
+    margin-top: 4rem;
+    width: 25rem;
+}
+
+.notify{
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+}
+
+.home-des{
+    width: 50%;
+    /* height:35rem; */
+    margin:10rem;
+    /* border: 2px solid black; */
+    border-radius: 2rem;
+    box-shadow: 0 0 10px 1px #333;
+
+}
+
+.home-des:hover{
+    transform: translateY(-.2rem);
+}
+.description  .home-des p{
+    font-size: 2.5rem;
+    padding:2rem;
+    font-weight: 550;
+    font-style: italic;
+}
+
+
+.footer{
+    display: flex;
+    /* border: 2px solid black; */
+    background-color:bisque;
+}
+
+.footer h7{
+    /* border: 2px solid black; */
+    font-size: 2.5rem;
+    /* margin-top: 2rem; */
+}
+.mid img:hover{
+    width: 26rem;
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 22px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 0%;
+}
+
+.dropdown span{
+    font-size: 2rem;
+    color: rgb(99, 99, 153);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content p{
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(61, 92, 92);
+
+}
+.dropdown-content a:hover{
+    background-color: #dcfdff;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: #dcfdff;
+}
+
+/* .middle{
+    width: 100%; */
+    /* border: 2px solid black; */
+    /* margin-top: 2rem;
+    display: flex;
+} */
+.menu .search{
+    /* border: 2px solid black;     */
+    width: 30rem;
+    font-size: 15px;
+}
+
+.menu .search input{
+    background-color: rgb(205, 211, 211); 
+    /* height:2rem; */
+    width: 20rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 5px 0 black;
+    font-size: 2rem;
+}

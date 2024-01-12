@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Common";
+}
+
+<div class="notify">@ViewBag.Notify</div>
+<div class="whole">
+    <div class="content">
+        <h3 style="font-size: 2.2rem;">MANAGEMENT TOOL </h3>
+        <h1>STORE MANAGEMENT SYSTEM</h1>
+        <p id="output" style="font-size: 2rem;" ></p>
+        <a asp-controller="Home" asp-action="Store"><button type="button" > Go to Store</button></a>
+    </div>
+    <div class="home-image">
+        <img src="../images/hero.webp">
+    </div>
+</div>
+
+
+<div class="mid">
+    <div class="description">
+        <div class="home-des" style="background-image: url(../images/gradient1.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;">
+
+            <a asp-controller="Home" asp-action="Index"></a>
+            <p style="color: white;">
+                This is the home Page, here you can be able to view the functionalities of the Store Management
+            </p>
+        </div>
+        <div class="home-des"  style="background-image: url(../images/gradient2.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;">
+            <a asp-controller="Home" asp-action="Buyproduct"></a>
+            <p style="color: white;"> 
+                The shop icon will get you to shopping page. There you can add some product to your store.
+            </p>
+        </div>
+
+        <div class="home-des" style="background-image: url(../images/gradient3.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;">
+            <a asp-controller="Home" asp-action="Store"></a>
+            <p>
+                The Store icon will help you to go to the store which contains product that you have bought and also you
+                can easily locate the product inside the Aspire Systems.
+            </p>
+        </div>
+        <div class="home-des" style="background-image: url(../images/gradient4.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;">
+            <a asp-controller="Home" asp-action="CustomerRequest"></a>
+            <p>
+                The shop icon will get you to shopping page. There you can add some product to your store.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <h7>copyright &copy;AspireSystems.com all rights reserved</h7>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    // Set the text to be written
+    var text = "A Software application to make your work easier, smarter and beneficial.";
+
+
+    // Set the speed of the auto-writing
+    var speed = 100;
+
+    // Get the element where the text will be written
+    var output = document.getElementById("output");
+
+    // Create a function for the auto-writing
+    var i = 0;
+    function autoWrite() {
+
+        if (i < text.length) {
+            output.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(autoWrite, speed);
+        }
+    }
+
+    // Call the function when the page is loaded
+    window.onload = autoWrite;
+</script>
+
+<script>
+    setTimeout(function() {
+        $('.notify').fadeOut('slow');
+    }, 5000); // 5 seconds
+</script>
+
+
+
+
+
+
+
+
+

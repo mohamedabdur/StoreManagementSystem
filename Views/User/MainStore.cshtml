@@ -1,0 +1,79 @@
+@model IEnumerable<Product>
+  
+@{
+        ViewData["Title"]="Store";
+        Layout = "_User";
+        string searchvalue = "";
+    }
+    <link rel="stylesheet" href="~/css/store.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    @* <div class="search">
+                    <input type="search" id="@searchvalue" style="background-color: rgb(255, 255, 251); height:3rem; padding:1rem;"
+                        placeholder="Search">&nbsp;
+                    <button type="submit" style="background-color: white;"><label>&nbsp;<i
+                                class="bi bi-search"></i></label></button>
+                                <a asp-controller="Home" asp-action="Store" asp-route-id="@searchvalue" ></a>
+            </div> *@
+<div class="main-container"> 
+  <div class="notify">@ViewBag.message</div>
+        <div class="top">
+            <h3 style="color: white;">Products Available</h3>
+            @* <a asp-controller="Home" asp-action="Buyproduct"><button type="button"> Add Products</button> </a>
+            <a asp-controller="Home" asp-action="Sellerdetails"><button type="button">Buyer Details</button> </a> *@
+        </div>
+
+        <div class="middle">
+            <h1>
+                Product List
+            </h1>   
+            @* <div class="search">    
+            <form method="post">  
+              <input type="search" style="background-color: rgb(205, 211, 211); height:4rem;" placeholder="Search">&nbsp;
+              <button type="submit" style="background-color: white;"><label><i class="bi bi-search"></i></label></button>
+            </form>
+            </div>      *@
+        </div>
+<div class="store-table">
+    <table class="table">
+  <thead class="thead-light">
+    <tr style="background-color: rgb(0, 0, 0); color:white;" >
+      <th scope="col">Product Id</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Quantity</th>
+      @* <th scope="col">Price</th> *@
+      <th scope="col">Recieved Date</th>
+      @* <th scope="col">Status</th> *@
+      @* <th scope="col">Edit</th>` *@
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var obj in Model)
+    {
+    <tr  style="background-color: rgb(0, 0, 0); color:white;">
+      <th scope="row">@obj.productid</th>
+      <td>@obj.productname</td>
+      <td>@obj.productcategory</td>
+      <td>@obj.quantity</td>
+      @* <td>@obj.productprice</td> *@
+      <td>@obj.recieveddate</td>
+      @* <td></td> *@
+      @* <td>
+        <a class="delete" asp-controller="Home" asp-action="Updateproduct" asp-route-id=@obj.productid>Edit</a>
+        <a class="delete" asp-controller="Home" asp-action="DeleteProduct" asp-route-id=@obj.productid>Delete</a>
+      </td> *@
+    </tr>
+    }
+  </tbody>
+</table>
+</div>
+</div>
+
+
+
+<script>
+    setTimeout(function() {
+        $('.notify').fadeOut('slow');
+    }, 5000); // 5 seconds
+</script>

@@ -1,0 +1,7 @@
+@model Product
+@{
+    ViewData["Title"]="Thanks";
+}
+
+<h1 style="color:red ">Thank you ! The product @Model.productname added to the store successfully!</h1>
+<a asp-controller="Store"asp-action="Display">View All products</a>

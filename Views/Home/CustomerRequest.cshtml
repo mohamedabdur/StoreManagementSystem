@@ -1,0 +1,52 @@
+@model IEnumerable<SellProduct>
+@{
+    Layout = "_Common";
+}
+<link rel="stylesheet" href="~/css/store.css"  />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<div class="main-container"> 
+<div class="notify">@ViewBag.Response</div>
+
+   <div class="message">
+            <a asp-controller="MessageAPI" asp-action="ViewMessage"><i class="bi bi-bell"></i> View Messages</a>
+        </div> 
+<div class="middle">   
+             <h1>
+              Customer Request
+            </h1>
+            </div>
+            <div class="store-table">
+    <table class="table"> 
+  <thead class="thead-light">
+    <tr  style="color: white; background-color: rgb(0, 0, 0);">
+      <th scope="col">Customer Name</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Requested Date</th>
+      <th scope="col">Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var sellProduct in Model)
+    {
+     <tr  style="color: white;">
+       <td>@sellProduct.customername</td>
+        <td>@sellProduct.productname</td>
+        <td>@sellProduct.quantity</td>
+        <td>@sellProduct.senddate</td>
+      <td class="response">
+        <a asp-controller="Home" asp-action="Accept" asp-route-id=@sellProduct.productid asp-route-name=@sellProduct.productname>accept</a>&nbsp;&nbsp;
+        <a asp-controller="Home" asp-action="Decline" asp-route-id=@sellProduct.productid>decline</a>
+      </td>
+    </tr>
+    } 
+  </tbody>
+</table>
+</div>
+
+
+<script>
+  setTimeout(function() {
+    $('.Response').fadeOut('slow');},5000);
+  
+</script>

@@ -1,0 +1,43 @@
+@model IEnumerable<SellProduct>
+    @{
+        ViewData["Title"]="Store";
+        Layout = "_User";
+    }
+    <link rel="stylesheet" href="~/css/store.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+@* <div class="main-container"> 
+        <div class="top">
+            <h3>Products Sold</h3>
+            <a asp-controller="Home" asp-action="Customerdetails"><button type="button" style="width: 20rem"> Customer Details</button> </a>
+        </div>
+
+        <div class="middle">
+            <h1>
+                Product List
+            </h1>            
+        </div> *@
+  <div class="main-container"> 
+<div class="store-table">
+    <table class="table">
+  <thead class="thead-light">
+    <tr style="color: whitesmoke;">
+      <th scope="col">Product Id</th>
+      <th scope="col">Product Name</th>
+      @* <th scope="col">Category</th> *@
+      <th scope="col">Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var products in Model)
+    {
+      <tr style="color: whitesmoke;">
+      <td>@products.productid</td>
+       <th scope="row">@products.productname</th>
+      <td>@products.quantity</td>
+    </tr>
+    }
+  </tbody>
+</table>
+</div>
+  </div>

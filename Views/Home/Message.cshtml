@@ -1,0 +1,49 @@
+@using System.Data
+@model System.Data.DataTable;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Common";
+}
+<link rel="stylesheet" href="~/css/store.css"  />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+<div class="main-container"> 
+<div class="middle">   
+             <h1>
+              Messages
+            </h1>
+            </div>
+            <div class="notify">@ViewBag.Message</div>
+            <div class="store-table">
+    <table class="table"> 
+  <thead class="thead-light">
+    <tr style="color: white;">
+      <th scope="col">Customer Name</th>
+      <th scope="col">Message</th>
+      <th scope="col">Requested Date</th>
+      @* <th scope="col">Edit</th> *@
+    </tr>
+  </thead>
+  <tbody>
+    @{
+      @foreach (DataRow message in Model.Rows)
+      {
+        <tr style="color: white;">  
+            <td>@message[1]</td>
+            <td>@message[2]</td>
+            <td>@message[3]</td>
+            <td class="btn"><a asp-route-id=@message[0] asp-action="DeleteMessages" asp-controller="Home" style="color: white;">Delete</a></td>
+        </tr>   
+      }
+    }
+  </tbody>
+</table>
+</div>
+
+
+<script>
+    setTimeout(function() {
+        $('.notify').fadeOut('slow');
+    }, 5000); // 5 seconds
+</script>

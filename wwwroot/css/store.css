@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    padding:3rem; 
+    margin:0;
+    min-height: 84vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: 2rem; 
+   background-image: url(../images/gradient2.jpg);
+   background-position: center;
+   background-size: cover ;
+   padding-bottom: 10rem;
+   background-repeat: no-repeat;
+
+}
+.notify{
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+}
+.top{
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    height: 10rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.top h3{
+    width: 15rem;
+    border: 2px solid rgb(255, 255, 255);
+    height: 4rem;
+    text-align: center;
+    /* margin-left: 3rem; */
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+    border-radius: .5rem;
+    color: white;
+
+}
+.top button{
+    width: 15rem;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: .7rem;
+    margin-right: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.top button:hover{
+    width: 15.3rem;
+    height: 4.2rem;
+    
+}
+.middle{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: 2rem;
+    display: flex; 
+    color: white;
+}
+.middle .search{
+    /* border: 2px solid black; */
+    margin-left: 38%;    
+    width: 25rem;
+    font-size: 15px;
+    margin-top: 2rem;
+
+}
+.middle h1{
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    /* border: 2px solid black; */
+    /* height: 4rem; */
+    /* border-bottom: 2px solid black; */
+}
+.middle .search input{
+    background-color: rgb(205, 211, 211); 
+    height:4rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 5px 0 black;
+}
+.table{
+    font-size: large;
+    /* border: 2px solid beige; */
+}
+
+.table a{
+    /* border: 2px solid black; */
+    font-size: 1.5rem;
+    /* background-color: black ; */
+    box-shadow: 0 0 6px 0 rgb(255, 255, 255);
+    color: white;
+}
+
+.store-table{
+    margin: 3rem;
+    /* border: 2px solid rgb(0, 0, 0); */
+    align-items: center;
+
+    /* background-color: rgb(173, 230, 230); */
+    box-shadow: 0 0 10px 0 rgb(255, 237, 237);
+    margin-bottom:3rem;
+}
+.store-table .response a{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-decoration: none;
+    padding: .5rem;
+}
+.store-table .response a:hover{
+    background-color: rgb(22, 139, 175);    
+}
+
+
+.update-button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;    
+    /* width: 6rem;
+    height: 3rem; */
+}
+
+
+.delete{
+    border-radius: .3rem;
+    padding: .4rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.delete:hover{
+    background-color: rgb(42, 68, 73);
+}
+
+.store-user-table{
+    margin: 2rem;
+    border: 2px solid rgb(0, 0, 0);
+    align-items: center;
+    border-radius: .5rem;
+    width: 30%;
+    /* background-color: rgb(173, 230, 230); */
+    box-shadow: 0 0 10px 0 rgb(245, 241, 241);
+}
+
+.userstore-container{
+    /* border: 2px solid black; */
+    display: flex;
+    background-color: honeydew;
+    height: 100vh;
+     
+}
+
+.text{
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    background-color: rgb(132, 175, 175);
+}
+
+
+.search{
+    /* border: 2px solid black; */
+    margin-left: 40%;
+    width: fit-content;
+
+}
+
+.search input{
+    border: 1px solid black;
+    border-radius: .5rem;
+    font-size: 2rem;
+}
+
+
+.message{
+    /* border: .5px solid black; */
+    margin-left: 75%;
+    font-size: medium;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: .7rem;
+    padding: .7rem;
+    box-shadow: 0 0 3px 0 black;
+    margin-top: 3rem;  
+}
+.message a{
+    text-decoration: none;
+    
+    color: rgb(0, 0, 0);
+}
+
+.message:hover{
+    background-color: rgb(123, 246, 250);
+}
+.message a:hover{
+    color: black;
+}
+
+
+.btn a{
+    text-decoration: none;
+    /* background-color: rgb(0, 0, 0); */
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    padding: .2rem;
+}
+
+.btn a:hover{
+    background-color: rgb(102, 179, 156);
+}

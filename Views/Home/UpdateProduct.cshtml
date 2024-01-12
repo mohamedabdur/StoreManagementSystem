@@ -1,0 +1,61 @@
+@model Product
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Common";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/addproduct.css" />
+<div class="buy">
+    <div class="addproduct">
+        <h1 style="color: navy;">ADD Quantity</h1>
+    </div>
+    <div class="add-form">
+        <form method="post">
+            <div class="form-group">
+                <label for="productid">Product ID</label>
+                <input readonly asp-for="productid" type="number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="productname">Product Name</label>
+                <input readonly type="text" asp-for="productname" class="form-control">
+                <span asp-validation-for="productname" class="text-danger" style="font-size: large;"></span>
+
+            </div>
+            <div class="form-group">
+                <label for="productcategory">Category</label>
+                <input readonly type="text" asp-for="productcategory" class="form-control">
+                <span asp-validation-for="productcategory" class="text-danger" style="font-size: large;"></span>
+
+            </div>
+            <div class="form-group">
+                <label for="supplierrname">buyer Name</label>
+                <input readonly type="text" asp-for="suppliername" class="form-control">
+                <span asp-validation-for="suppliername" class="text-danger" style="font-size: large;"></span>
+            </div>
+            <div class="form-group">
+                <label for="supplierPhoneNumber">buyer Phone Number</label>
+                <input readonly type="text" class="form-control" asp-for="supplierPhoneNumber">
+            </div>
+            <div class="form-group">
+                <label for="quantity">Product Quantity</label>
+                <input type="number" class="form-control" asp-for="quantity">
+            </div>
+            @* <div class="form-group">
+                <label for="productprice">Price</label>
+                <input readonly type="number" class="form-control" asp-for="productprice">
+            </div> *@
+            
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" class="form-control" asp-for="recieveddate">
+            </div>
+            <button type="submit">Update</button>
+            <a asp-controller="Home" asp-action="Store" ><button type="button" style="height: 6rem;">Back to Store</button></a>
+        </form>
+    </div>
+</div>
+
+ @section Scripts{
+  <partial name="_ValidationScriptsPartial" />
+}
+

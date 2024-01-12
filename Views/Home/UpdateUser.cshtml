@@ -1,0 +1,53 @@
+@using System.Data
+@model NewUser
+
+@{
+    ViewData["Title"]="Store";
+    Layout = "_Common";
+    foreach(DataRow users in ViewBag.Users.Rows)
+    {
+        ViewBag.userName = users[0];
+        ViewBag.floor = users[1];
+    }
+}
+<link rel="stylesheet" href="~/css/edituser.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<div class="edituser-container">
+    <div class="main-section">
+       
+<div class="buy">
+    <div class="addproduct">
+        <h1 style="color: navy;">Update User</h1>
+    </div>
+    <div class="add-form">
+        <form method="post">
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input readonly type="text" asp-for="Name" value="@ViewBag.userName" class="form-control">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="floor">Floor</label>
+                <input readonly type="number" asp-for="floor" value="@ViewBag.floor" class="form-control">
+                <span asp-validation-for="floor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" asp-for="password" class="form-control">
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label for="reenteredpassword">Confirm Password</label>
+                <input type="password" asp-for="reenteredpassword" class="form-control">
+                <span asp-validation-for="reenteredpassword" class="text-danger"></span>
+            </div>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</div>
+    </div>
+</div>
+
+@section Scripts{
+  <partial name="_ValidationScriptsPartial" />
+} 

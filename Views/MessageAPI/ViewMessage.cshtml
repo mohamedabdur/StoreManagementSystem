@@ -1,0 +1,50 @@
+@model IEnumerable<Message>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Common";
+}
+<link rel="stylesheet" href="~/css/store.css"  />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+<div class="main-container"> 
+<div class="middle">   
+             <h1>
+              Messages
+            </h1>
+            </div>
+            <div class="notify">@ViewBag.Message</div>
+            <div class="store-table">
+    <table class="table"> 
+  <thead class="thead-light">
+    <tr style="color: white;">
+      @* <th scope="col">ID</th> *@
+      <th scope="col">Customer Name</th>
+      <th scope="col">Message</th>
+      <th scope="col">Requested Date</th>
+      @* <th scope="col">Edit</th> *@
+    </tr>
+  </thead>
+  <tbody>
+    @{
+      @foreach (Message message in Model)
+      {
+        <tr style="color: white;">  
+            @* <td>@message.id</td> *@
+            <td>@message.customerName</td>
+            <td>@message.message</td>
+            <td>@message.date</td>
+            <td class="btn"><a asp-route-id=@message.id asp-action="DeleteMessage" asp-controller="MessageAPI" style="color: white;">Delete</a></td>
+        </tr>   
+      }
+    }
+  </tbody>
+</table>
+</div>
+
+
+<script>
+    setTimeout(function() {
+        $('.notify').fadeOut('slow');
+    }, 5000); // 5 seconds
+</script>

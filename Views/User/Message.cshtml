@@ -1,0 +1,41 @@
+@model practice.Models.Message
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_User";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/Userindex.css" asp-append-version="true" />
+
+
+<div class="user-form">
+        <p style="color: red; font-size : large;">@ViewBag.Info</p>
+    <form method="post" asp-action="Message" asp-controller="User" style="align-items: center;">
+        <div class="username">
+            <label>id</label>
+            <input type="text" width="100%" style="color:#777" asp-for="id">
+        </div>
+        <div class="username">
+            <label>User Name</label>
+            <input readonly value=@ViewBag.Session width="100%" style="color:#777" asp-for="customerName">
+        </div>
+        <div class="username">
+            <label>Message</label>
+            <input type="text" style="resize:none; height:5rem;" asp-for="message"></textarea>
+            @* <span asp-validation-for="message" class="text-danger"></span> *@
+
+        </div>
+        <div class="username">
+            <label>Date</label>
+            <input type="date" asp-for="date">
+            @* <span asp-validation-for="senddate" class="text-danger"></span> *@
+         </div>
+        <button type="submit">Submit</button>
+    </form>
+
+</div> 

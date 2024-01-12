@@ -1,0 +1,128 @@
+@model IEnumerable<practice.Models.SellProduct>
+@{
+  ViewData["Title"] = "Store";
+  Layout = "_User";
+}
+<link rel="stylesheet" href="~/css/store.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+@* <div class="main-container">
+<div class="top">
+<h3>Products Sold</h3>
+<a asp-controller="Home" asp-action="Customerdetails"><button type="button" style="width: 20rem"> Customer
+Details</button> </a>
+</div>
+
+<div class="middle">
+<h1>
+Product List
+</h1>
+</div> *@
+<div class="notify">@ViewBag.UserProduct</div>
+<div class="userstore-container">
+<div class="store-user-table">
+  <div class="text">Accepted Products</div>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Product Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Date</th>
+        <th scope="col">Status</th>
+        @* <th scope="col">Edit</th> *@
+      </tr>
+    </thead>
+    <tbody>
+       @{
+        @foreach (var products in Model)
+        {
+          if(@products.status == "Accepted"){
+          <tr>
+          <th scope="row">@products.productname</th>
+          <td>@products.quantity</td>
+          <td>@products.senddate</td>
+          <td>@products.status</td>
+          @* <td> 
+            <a asp-controller="User" asp-action="DeleteHistory" asp-route-name="@products.status" class="delete" style="color: white; background-color:black">Delete</a>
+          </td> *@
+          </tr>
+          } 
+        }
+       }
+    </tbody>
+  </table>
+</div>
+
+<div class="store-user-table">
+   <div class="text">Declined Products</div>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Product Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Date</th>
+        <th scope="col">Status</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+       @{
+        @foreach (var products in Model)
+        {
+          if(@products.status == "Declined"){
+          <tr>
+          <th scope="row">@products.productname</th>
+          <td>@products.quantity</td>
+          <td>@products.senddate</td>
+          <td>@products.status</td>
+          <td> 
+            <a asp-controller="User" asp-action="DeleteHistory" asp-route-name="@products.status" class="delete" style="color: white; background-color:black">Delete</a>
+          </td>
+          </tr>
+          } 
+        }
+       }
+    </tbody>
+  </table>
+</div>
+
+<div class="store-user-table">
+   <div class="text">Pending Products</div>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Product Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Date</th>
+        <th scope="col">Status</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+       @{
+        @foreach (var products in Model)
+        {
+          if(@products.status == "Pending"){
+          <tr>
+          <th scope="row">@products.productname</th>
+          <td>@products.quantity</td>
+          <td>@products.senddate</td>
+          <td>@products.status</td>
+          <td> 
+            <a asp-controller="User" asp-action="DeleteHistory" asp-route-name="@products.status" class="delete" style="color: white; background-color:black">Delete</a>
+          </td>
+          </tr>
+          } 
+        }
+       }
+    </tbody>
+  </table>
+</div>
+</div>
+
+
+<script>
+    setTimeout(function(){
+        $('.notify').fadeOut('slow');
+    },5000);
+</script>

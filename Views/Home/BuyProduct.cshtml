@@ -1,0 +1,69 @@
+@model Product
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Common";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/addproduct.css" />
+<div class="buy">
+    <div class="addproduct">
+        <h1 style="color: navy;">BUY PRODUCTS</h1>
+    </div>
+    <div class="add-form">
+        <form method="post">
+            @* <div class="form-group">
+                <label for="productid">Product ID</label>
+                <input type="number" class="form-control">
+            </div> *@
+            <div class="form-group">
+                <label for="productname">Product Name</label>
+                <input type="text" asp-for="productname" class="form-control">
+                <span asp-validation-for="productname" class="text-danger" style="font-size: large;"></span>
+                <span style="color:red">@ViewBag.existingProduct</span>
+
+            </div>
+            <div class="form-group">
+                <label for="productcategory">Category</label>
+                @* <input type="text" asp-for="productcategory" class="form-control"> *@
+                @* <span asp-validation-for="productcategory" class="text-danger" style="font-size: large;"></span> *@
+                <select name="productcategory">
+                <option value="Furniture">Furniture</option>
+                <option value="Food">Food</option>
+                <option value="Electronics">Electronics</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="supplierrname">buyer Name</label>
+                <input type="text" asp-for="suppliername" class="form-control">
+                <span asp-validation-for="suppliername" class="text-danger" style="font-size: large;"></span>
+            </div>
+            <div class="form-group">
+                <label for="supplierPhoneNumber">buyer Phone Number</label>
+                <input type="number" class="form-control" asp-for="supplierPhoneNumber">
+                <span asp-validation-for="supplierPhoneNumber" class="text-danger" style="font-size: large;" ></span>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Product Quantity</label>
+                <input type="number" class="form-control" asp-for="quantity">
+                <span asp-validation-for="quantity" class="text-danger" style="font-size: large;" ></span>
+            </div>
+            @* <div class="form-group">
+                <label for="productprice">Price</label>
+                <input type="number" class="form-control" asp-for="productprice">
+            </div>
+             *@
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" class="form-control" asp-for="recieveddate">
+                <span asp-validation-for="recieveddate" class="text-danger" style="font-size: large;" ></span>
+            </div>
+            <button type="submit">Submit</button>
+            <a asp-controller="Home" asp-action="Store" ><button type="button" style="height: 6rem;">Back to Store</button></a>
+        </form>
+    </div>
+</div>
+
+ @section Scripts{
+  <partial name="_ValidationScriptsPartial" />
+}
+

@@ -1,0 +1,48 @@
+@model practice.Models.NewUser
+@{
+    ViewData["Title"]="Store";
+    Layout = "_Common";
+}
+<link rel="stylesheet" href="~/css/edituser.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<div class="edituser-container">
+    <div class="main-section">
+       
+<div class="buy">
+    <div class="addproduct">
+        <h1 style="color: navy;">Add User</h1>
+    </div>
+    <div class="add-form">
+        <form method="post">
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input type="text"asp-for="Name" minlength="3" maxlength="10" class="form-control">
+                <span asp-validation-for="Name" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label for="floor">Floor</label>
+                <input type="number" asp-for="floor" class="form-control">
+                <span asp-validation-for="floor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" asp-for="password" class="form-control">
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="reenteredpassword"></label>
+                <input type="password" asp-for="reenteredpassword" class="form-control">
+                <span asp-validation-for="reenteredpassword" class="text-danger"></span>
+            </div>
+            <button type="submit">Add User</button>
+        </form>
+        <span class="text-danger" style="font-size:1.5rem;">@ViewData["Notify"]</span>
+    </div>
+</div>
+    </div>
+</div>
+
+@section Scripts{
+  <partial name="_ValidationScriptsPartial" />
+} 

@@ -1,0 +1,68 @@
+.buy{
+   /* border:2px solid black; */
+   background-color: bisque;
+}
+
+.buy .addproduct{
+    text-align: center;
+    /* border: 2px solid black; */
+    margin:2rem;
+    padding:2rem;
+}
+.buy .add-form{
+    /* border:2px solid black; */
+    margin:2rem;
+    width: 50%;
+    margin-left: 25%;
+    background-color: antiquewhite;
+
+}
+
+.buy .add-form .form-group input{
+    /* border: 2px solid black; */
+    width: 30%;
+    height: 4rem;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+ 
+.buy .add-form .form-group span{
+    font-size: medium;
+    margin-left: 10rem;
+}
+.buy .add-form .form-group select,option{
+    /* border: 2px solid black; */
+    width: 30%;
+    height: 4rem;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.buy .add-form .form-group label{
+    /* border: 2px solid rebeccapurple; */
+    text-align: center;
+    width: 99%;
+    margin: 5px;
+    font-size: 2rem;
+}
+.buy .add-form button{
+    /* border: 2px solid black; */
+    width:10rem;
+    height: 4rem;
+    margin-left: 43.5%;
+    margin-top: 2rem;
+    color: white;
+    background-color: black;
+    border-radius: .7rem;  
+    margin-bottom: 2rem;
+    font-size: large;
+}
+
+.buy .add-form button:hover{
+    width: 10.2rem;
+    height: 4.1rem;
+}

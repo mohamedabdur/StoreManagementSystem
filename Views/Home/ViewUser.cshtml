@@ -1,0 +1,46 @@
+@using System.Data;
+@model System.Data.DataTable;
+
+@{
+    ViewData["Title"]="Store";
+    Layout = "_Common";
+}
+<link rel="stylesheet" href="~/css/edituser.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+<div class="viewuser-container">
+<div class="user-list">
+    <div class="notify">@ViewBag.User</div>
+        <h1>User List</h1>
+        <table class="userslist">
+            <thead>
+            <tr>
+            <th> Name</th>
+            <th> Floor</th>
+            <th> Password</th>
+            </tr>
+            </thead>
+            <tbody>   
+                @foreach (DataRow users in Model.Rows)
+                {
+                    <tr>
+                    <td>@users[0]</td>
+                    <td>@users[1]</td>
+                    <td>@users[2]</td>
+                    @if(Convert.ToString(@users[0]) != "Admin01")
+                    {
+                    <td class="btn"><a href="@Url.Action("DeleteUser", "Home", new { myString = @users[0] })">DELETE</a></td>       
+                    }
+                    <td class="btn"><a href="@Url.Action("UpdateUser", "Home", new { myString = @users[0] })">UPDATE</a></td>
+                    </tr>
+                }
+           </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script>
+    setTimeout(function() {
+        $('.notify').fadeOut('slow');},5000);
+</script>

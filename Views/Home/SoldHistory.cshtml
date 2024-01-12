@@ -1,0 +1,54 @@
+@model IEnumerable<practice.Models.SellProduct>
+    @{
+        ViewData["Title"]="Store";
+        Layout = "_Common";
+    }
+    <link rel="stylesheet" href="~/css/store.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+<div class="main-container"> 
+        <div class="top">
+            <h3>Products Sold</h3>
+            @* <a asp-controller="Home" asp-action="Customerdetails"><button type="button" style="width: 20rem"> Customer Details</button> </a> *@
+        </div>
+
+        <div class="middle">
+            <h1>
+                 History
+            </h1>            
+        </div>
+
+@* <div class="main-container"> *@
+
+<div class="store-user-table" style="width:100%;">
+  <table class="table">
+    <thead class="thead-light" style="background-color: rgb(0, 0, 0); color:white;">
+      <tr style="color: white;">
+        <th scope="col">Product Name</th>
+        <th scope="col">Sold To</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Date</th>
+        @* <th scope="col">Status</th> *@
+        @* <th scope="col">Edit</th> *@
+      </tr>
+    </thead>
+    <tbody>
+       @{
+        @foreach (var products in Model)
+        {
+          <tr  style="color: white;">
+          <th scope="row">@products.productname</th>
+          <th scope="row">@products.customername</th>
+          <td>@products.quantity</td>
+          <td>@products.senddate</td>
+          @* <td>@products.status</td> *@
+          @* <td> 
+            <a asp-controller="User" asp-action="DeleteHistory" asp-route-name="@products.productname" class="delete">Delete</a>
+          </td> *@
+          </tr>
+        }
+       }
+    </tbody>
+  </table>
+</div>
+</div>
