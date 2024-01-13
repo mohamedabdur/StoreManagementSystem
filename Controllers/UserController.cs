@@ -179,10 +179,11 @@ public class UserController : Controller
         if(response.IsSuccessStatusCode)
         {
                 Console.WriteLine("message posted");
-                TempData["Info"] = "Message Received successfully";
+                TempData["Info"] = "Message Sent successfully";
                 return RedirectToAction("Message", "User");
         } 
         }
-        return RedirectToAction("Index", "Login");
+        TempData["Info"]= "Fill all the details";
+        return RedirectToAction("Message", "User");
     }
 }

@@ -99,7 +99,7 @@ overflow: hidden;
 
 .home-image{
     margin-top: 20rem;
-    margin-left: 40rem;
+    margin-left: 5rem;
     /* border: 1px dotted black; */
 }
 .description{
@@ -131,7 +131,7 @@ overflow: hidden;
 .home-des{
     width: 50%;
     /* height:35rem; */
-    margin:10rem;
+    margin:5rem;
     /* border: 2px solid black; */
     border-radius: 2rem;
     box-shadow: 0 0 10px 1px #333;

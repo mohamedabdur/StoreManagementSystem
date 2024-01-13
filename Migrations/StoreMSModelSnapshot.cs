@@ -54,7 +54,7 @@ namespace practice.Migrations
 
                     b.HasKey("productid");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("practice.Models.SellProduct", b =>
@@ -83,7 +83,7 @@ namespace practice.Migrations
 
                     b.HasKey("productid");
 
-                    b.ToTable("CustomerRequest");
+                    b.ToTable("CustomerRequest", (string)null);
                 });
 #pragma warning restore 612, 618
         }

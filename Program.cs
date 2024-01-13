@@ -13,6 +13,8 @@ using Microsoft.EntityFrameworkCore;
 
 using practice.Data;
 using practice.Models;
+using Serilog;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +25,11 @@ builder.Services.AddDbContext<StoreMS>(options => options.UseSqlServer(builder.C
 ));
 builder.Services.AddSingleton<IRepository, Repository>();
 
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration).CreateLogger();
+
+builder.Host.UseSerilog();
 builder.Services.AddSession(options =>
 {
 //    options.IdleTimeout = TimeSpan.FromSeconds(10);
@@ -44,7 +51,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 app.UseSession();
-
+app.UseSerilogRequestLogging();
 app.UseAuthorization();
 
 app.MapControllerRoute(

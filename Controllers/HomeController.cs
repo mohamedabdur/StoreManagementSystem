@@ -4,6 +4,7 @@ using System.Collections;
 using practice.Data;
 using practice.Models;
 using System.Data;
+using Serilog;
 
 namespace practice.Controllers;
 
@@ -27,6 +28,7 @@ public class HomeController : Controller
             ViewBag.Session = HttpContext.Session.GetString("Session");
             // Logged out message
             ViewBag.Notify = TempData["Notify"];
+            Log.Information("Login Successful");
             return View();
         }
         return RedirectToAction("Index", "Login");

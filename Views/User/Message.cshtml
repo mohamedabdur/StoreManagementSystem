@@ -16,10 +16,10 @@
 <div class="user-form">
         <p style="color: red; font-size : large;">@ViewBag.Info</p>
     <form method="post" asp-action="Message" asp-controller="User" style="align-items: center;">
-        <div class="username">
+        @* <div class="username">
             <label>id</label>
             <input type="text" width="100%" style="color:#777" asp-for="id">
-        </div>
+        </div> *@
         <div class="username">
             <label>User Name</label>
             <input readonly value=@ViewBag.Session width="100%" style="color:#777" asp-for="customerName">
@@ -27,13 +27,13 @@
         <div class="username">
             <label>Message</label>
             <input type="text" style="resize:none; height:5rem;" asp-for="message"></textarea>
-            @* <span asp-validation-for="message" class="text-danger"></span> *@
+            <span asp-validation-for="message" class="text-danger"></span>
 
         </div>
         <div class="username">
             <label>Date</label>
             <input type="date" asp-for="date">
-            @* <span asp-validation-for="senddate" class="text-danger"></span> *@
+            <span asp-validation-for="date" class="text-danger"></span>
          </div>
         <button type="submit">Submit</button>
     </form>
