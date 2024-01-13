@@ -2612,3 +2612,166 @@ FROM [Products] AS [p]
 2024-01-13 14:42:29.662 +05:30 [INF] HTTP GET /User/Message responded 200 in 80.6966 ms
 2024-01-13 14:42:29.665 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/User/Message - 200 null text/html; charset=utf-8 88.7619ms
 2024-01-13 14:44:26.281 +05:30 [INF] Application is shutting down...
+2024-01-13 14:44:33.584 +05:30 [INF] User profile is available. Using 'C:\Users\mohamed.abdur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-13 14:44:33.668 +05:30 [INF] Now listening on: http://localhost:5277
+2024-01-13 14:44:33.671 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-13 14:44:33.672 +05:30 [INF] Hosting environment: Development
+2024-01-13 14:44:33.673 +05:30 [INF] Content root path: C:\Users\mohamed.abdur\Desktop\SMS\Task-SMS\Project
+2024-01-13 14:44:36.873 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - null null
+2024-01-13 14:44:36.890 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-01-13 14:44:36.945 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-13 14:44:36.983 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.LoginController (practice).
+2024-01-13 14:44:37.058 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-13 14:44:37.260 +05:30 [INF] Executed ViewResult - view Index executed in 165.9496ms.
+2024-01-13 14:44:37.278 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 284.7211ms
+2024-01-13 14:44:37.280 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-13 14:44:37.308 +05:30 [INF] HTTP GET / responded 200 in 340.2051 ms
+2024-01-13 14:44:37.333 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - 200 null text/html; charset=utf-8 459.3126ms
+2024-01-13 14:44:43.698 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5277/ - application/x-www-form-urlencoded 214
+2024-01-13 14:44:43.706 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-13 14:44:43.727 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(practice.Models.User) on controller practice.Controllers.LoginController (practice).
+2024-01-13 14:44:44.010 +05:30 [INF] Accessing expired session, Key:2f25d11c-1c53-3967-088d-49d254cf3974
+2024-01-13 14:44:44.038 +05:30 [INF] Executing RedirectResult, redirecting to /User.
+2024-01-13 14:44:44.041 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 303.193ms
+2024-01-13 14:44:44.043 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-13 14:44:44.045 +05:30 [INF] HTTP POST / responded 302 in 338.8565 ms
+2024-01-13 14:44:44.057 +05:30 [INF] Session started; Key:2f25d11c-1c53-3967-088d-49d254cf3974, Id:b850f219-1f29-4720-77d4-f6db20c6552a
+2024-01-13 14:44:44.061 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5277/ - 302 0 null 362.4476ms
+2024-01-13 14:44:44.066 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/User - null null
+2024-01-13 14:44:44.079 +05:30 [INF] Executing endpoint 'practice.Controllers.UserController.Index (practice)'
+2024-01-13 14:44:44.106 +05:30 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(practice.Models.Product) on controller practice.Controllers.UserController (practice).
+2024-01-13 14:44:46.195 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[productid], [p].[productcategory], [p].[productname], [p].[quantity], [p].[recieveddate], [p].[supplierPhoneNumber], [p].[suppliername]
+FROM [Products] AS [p]
+2024-01-13 14:44:46.394 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-13 14:44:46.545 +05:30 [INF] Executed ViewResult - view Index executed in 153.7215ms.
+2024-01-13 14:44:46.549 +05:30 [INF] Executed action practice.Controllers.UserController.Index (practice) in 2437.1242ms
+2024-01-13 14:44:46.554 +05:30 [INF] Executed endpoint 'practice.Controllers.UserController.Index (practice)'
+2024-01-13 14:44:46.580 +05:30 [INF] HTTP GET /User responded 200 in 2500.7219 ms
+2024-01-13 14:44:46.628 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/User - 200 null text/html; charset=utf-8 2561.3739ms
+2024-01-13 14:44:49.201 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/User/Message - null null
+2024-01-13 14:44:49.210 +05:30 [INF] Executing endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:44:49.219 +05:30 [INF] Route matched with {action = "Message", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Message() on controller practice.Controllers.UserController (practice).
+2024-01-13 14:44:49.229 +05:30 [INF] Executing ViewResult, running view Message.
+2024-01-13 14:44:49.309 +05:30 [INF] Executed ViewResult - view Message executed in 80.7374ms.
+2024-01-13 14:44:49.311 +05:30 [INF] Executed action practice.Controllers.UserController.Message (practice) in 88.7149ms
+2024-01-13 14:44:49.318 +05:30 [INF] Executed endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:44:49.322 +05:30 [INF] HTTP GET /User/Message responded 200 in 112.3906 ms
+2024-01-13 14:44:49.327 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/User/Message - 200 null text/html; charset=utf-8 124.2519ms
+2024-01-13 14:44:51.952 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5277/User/Message - application/x-www-form-urlencoded 233
+2024-01-13 14:44:51.969 +05:30 [INF] Executing endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:44:51.978 +05:30 [INF] Route matched with {action = "Message", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Message(Microsoft.AspNetCore.Http.IFormCollection) on controller practice.Controllers.UserController (practice).
+2024-01-13 14:44:52.318 +05:30 [INF] Executing RedirectResult, redirecting to /User/Message.
+2024-01-13 14:44:52.322 +05:30 [INF] Executed action practice.Controllers.UserController.Message (practice) in 333.1207ms
+2024-01-13 14:44:52.324 +05:30 [INF] Executed endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:44:52.336 +05:30 [INF] HTTP POST /User/Message responded 302 in 367.4605 ms
+2024-01-13 14:44:52.342 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5277/User/Message - 302 0 null 390.6826ms
+2024-01-13 14:44:52.362 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/User/Message - null null
+2024-01-13 14:44:52.375 +05:30 [INF] Executing endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:44:52.381 +05:30 [INF] Route matched with {action = "Message", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Message() on controller practice.Controllers.UserController (practice).
+2024-01-13 14:44:52.393 +05:30 [INF] Executing ViewResult, running view Message.
+2024-01-13 14:44:52.406 +05:30 [INF] Executed ViewResult - view Message executed in 13.6353ms.
+2024-01-13 14:44:52.408 +05:30 [INF] Executed action practice.Controllers.UserController.Message (practice) in 20.8737ms
+2024-01-13 14:44:52.412 +05:30 [INF] Executed endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:44:52.428 +05:30 [INF] HTTP GET /User/Message responded 200 in 52.3737 ms
+2024-01-13 14:44:52.447 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/User/Message - 200 null text/html; charset=utf-8 83.3045ms
+2024-01-13 14:44:58.823 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5277/User/Message - application/x-www-form-urlencoded 238
+2024-01-13 14:44:58.834 +05:30 [INF] Executing endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:44:58.838 +05:30 [INF] Route matched with {action = "Message", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Message(Microsoft.AspNetCore.Http.IFormCollection) on controller practice.Controllers.UserController (practice).
+2024-01-13 14:44:58.870 +05:30 [INF] Executing RedirectResult, redirecting to /User/Message.
+2024-01-13 14:44:58.875 +05:30 [INF] Executed action practice.Controllers.UserController.Message (practice) in 31.1126ms
+2024-01-13 14:44:58.884 +05:30 [INF] Executed endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:44:58.888 +05:30 [INF] HTTP POST /User/Message responded 302 in 54.4039 ms
+2024-01-13 14:44:58.900 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5277/User/Message - 302 0 null 76.4249ms
+2024-01-13 14:44:58.913 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/User/Message - null null
+2024-01-13 14:44:58.924 +05:30 [INF] Executing endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:44:58.927 +05:30 [INF] Route matched with {action = "Message", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Message() on controller practice.Controllers.UserController (practice).
+2024-01-13 14:44:58.940 +05:30 [INF] Executing ViewResult, running view Message.
+2024-01-13 14:44:58.950 +05:30 [INF] Executed ViewResult - view Message executed in 10.2808ms.
+2024-01-13 14:44:58.967 +05:30 [INF] Executed action practice.Controllers.UserController.Message (practice) in 28.7142ms
+2024-01-13 14:44:58.977 +05:30 [INF] Executed endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:44:58.986 +05:30 [INF] HTTP GET /User/Message responded 200 in 62.5145 ms
+2024-01-13 14:44:58.990 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/User/Message - 200 null text/html; charset=utf-8 76.7987ms
+2024-01-13 14:45:07.233 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5277/User/Message - application/x-www-form-urlencoded 251
+2024-01-13 14:45:07.253 +05:30 [INF] Executing endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:45:07.256 +05:30 [INF] Route matched with {action = "Message", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Message(Microsoft.AspNetCore.Http.IFormCollection) on controller practice.Controllers.UserController (practice).
+2024-01-13 14:45:07.303 +05:30 [INF] Executing RedirectResult, redirecting to /User/Message.
+2024-01-13 14:45:07.306 +05:30 [INF] Executed action practice.Controllers.UserController.Message (practice) in 39.7856ms
+2024-01-13 14:45:07.312 +05:30 [INF] Executed endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:45:07.319 +05:30 [INF] HTTP POST /User/Message responded 302 in 66.1227 ms
+2024-01-13 14:45:07.325 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5277/User/Message - 302 0 null 91.6809ms
+2024-01-13 14:45:07.338 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/User/Message - null null
+2024-01-13 14:45:07.347 +05:30 [INF] Executing endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:45:07.350 +05:30 [INF] Route matched with {action = "Message", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Message() on controller practice.Controllers.UserController (practice).
+2024-01-13 14:45:07.356 +05:30 [INF] Executing ViewResult, running view Message.
+2024-01-13 14:45:07.365 +05:30 [INF] Executed ViewResult - view Message executed in 8.9769ms.
+2024-01-13 14:45:07.368 +05:30 [INF] Executed action practice.Controllers.UserController.Message (practice) in 13.1938ms
+2024-01-13 14:45:07.370 +05:30 [INF] Executed endpoint 'practice.Controllers.UserController.Message (practice)'
+2024-01-13 14:45:07.373 +05:30 [INF] HTTP GET /User/Message responded 200 in 26.1425 ms
+2024-01-13 14:45:07.382 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/User/Message - 200 null text/html; charset=utf-8 44.5595ms
+2024-01-13 14:45:11.086 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home/Logout - null null
+2024-01-13 14:45:11.095 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.Logout (practice)'
+2024-01-13 14:45:11.114 +05:30 [INF] Route matched with {action = "Logout", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller practice.Controllers.HomeController (practice).
+2024-01-13 14:45:11.123 +05:30 [INF] Executing RedirectResult, redirecting to /.
+2024-01-13 14:45:11.131 +05:30 [INF] Executed action practice.Controllers.HomeController.Logout (practice) in 9.6427ms
+2024-01-13 14:45:11.136 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.Logout (practice)'
+2024-01-13 14:45:11.139 +05:30 [INF] HTTP GET /Home/Logout responded 302 in 44.5878 ms
+2024-01-13 14:45:11.148 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home/Logout - 302 0 null 61.6215ms
+2024-01-13 14:45:11.155 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - null null
+2024-01-13 14:45:11.165 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-13 14:45:11.168 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.LoginController (practice).
+2024-01-13 14:45:11.182 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-13 14:45:11.191 +05:30 [INF] Executed ViewResult - view Index executed in 9.3012ms.
+2024-01-13 14:45:11.210 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 34.1004ms
+2024-01-13 14:45:11.221 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-13 14:45:11.235 +05:30 [INF] HTTP GET / responded 200 in 69.9459 ms
+2024-01-13 14:45:11.239 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - 200 null text/html; charset=utf-8 84.0909ms
+2024-01-13 14:45:17.919 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5277/ - application/x-www-form-urlencoded 216
+2024-01-13 14:45:17.923 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-13 14:45:17.925 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(practice.Models.User) on controller practice.Controllers.LoginController (practice).
+2024-01-13 14:45:17.946 +05:30 [INF] Executing RedirectResult, redirecting to /Home.
+2024-01-13 14:45:17.949 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 13.2261ms
+2024-01-13 14:45:18.130 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-13 14:45:18.133 +05:30 [INF] HTTP POST / responded 302 in 209.7276 ms
+2024-01-13 14:45:18.137 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5277/ - 302 0 null 217.9024ms
+2024-01-13 14:45:18.184 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home - null null
+2024-01-13 14:45:18.189 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-13 14:45:18.198 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.HomeController (practice).
+2024-01-13 14:45:18.217 +05:30 [INF] Login Successful
+2024-01-13 14:45:18.225 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-13 14:45:18.288 +05:30 [INF] Executed ViewResult - view Index executed in 66.5423ms.
+2024-01-13 14:45:18.294 +05:30 [INF] Executed action practice.Controllers.HomeController.Index (practice) in 88.2294ms
+2024-01-13 14:45:18.305 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-13 14:45:18.320 +05:30 [INF] HTTP GET /Home responded 200 in 130.5377 ms
+2024-01-13 14:45:18.327 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home - 200 null text/html; charset=utf-8 143.061ms
+2024-01-13 14:45:21.188 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home/CustomerRequest - null null
+2024-01-13 14:45:21.213 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.CustomerRequest (practice)'
+2024-01-13 14:45:21.227 +05:30 [INF] Route matched with {action = "CustomerRequest", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CustomerRequest() on controller practice.Controllers.HomeController (practice).
+2024-01-13 14:45:21.481 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[productid], [c].[customername], [c].[productname], [c].[quantity], [c].[senddate], [c].[status]
+FROM [CustomerRequest] AS [c]
+WHERE [c].[status] = N'Pending'
+2024-01-13 14:45:21.492 +05:30 [INF] Executing ViewResult, running view CustomerRequest.
+2024-01-13 14:45:21.518 +05:30 [INF] Executed ViewResult - view CustomerRequest executed in 27.9517ms.
+2024-01-13 14:45:21.521 +05:30 [INF] Executed action practice.Controllers.HomeController.CustomerRequest (practice) in 287.6922ms
+2024-01-13 14:45:21.534 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.CustomerRequest (practice)'
+2024-01-13 14:45:21.570 +05:30 [INF] HTTP GET /Home/CustomerRequest responded 200 in 357.0535 ms
+2024-01-13 14:45:21.598 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home/CustomerRequest - 200 null text/html; charset=utf-8 409.647ms
+2024-01-13 14:45:22.765 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/MessageAPI/ViewMessage - null null
+2024-01-13 14:45:22.771 +05:30 [INF] Executing endpoint 'practice.Controllers.MessageAPIController.ViewMessage (practice)'
+2024-01-13 14:45:22.790 +05:30 [INF] Route matched with {action = "ViewMessage", controller = "MessageAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewMessage() on controller practice.Controllers.MessageAPIController (practice).
+2024-01-13 14:45:22.904 +05:30 [INF] Executing ViewResult, running view ViewMessage.
+2024-01-13 14:45:22.931 +05:30 [INF] Executed ViewResult - view ViewMessage executed in 28.3992ms.
+2024-01-13 14:45:22.935 +05:30 [INF] Executed action practice.Controllers.MessageAPIController.ViewMessage (practice) in 133.8226ms
+2024-01-13 14:45:22.980 +05:30 [INF] Executed endpoint 'practice.Controllers.MessageAPIController.ViewMessage (practice)'
+2024-01-13 14:45:22.984 +05:30 [INF] HTTP GET /MessageAPI/ViewMessage responded 200 in 213.1711 ms
+2024-01-13 14:45:23.033 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/MessageAPI/ViewMessage - 200 null text/html; charset=utf-8 268.4298ms
+2024-01-13 14:45:36.770 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/MessageAPI/ViewMessage - null null
+2024-01-13 14:45:36.782 +05:30 [INF] Executing endpoint 'practice.Controllers.MessageAPIController.ViewMessage (practice)'
+2024-01-13 14:45:36.786 +05:30 [INF] Route matched with {action = "ViewMessage", controller = "MessageAPI"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewMessage() on controller practice.Controllers.MessageAPIController (practice).
+2024-01-13 14:45:36.815 +05:30 [INF] Executing ViewResult, running view ViewMessage.
+2024-01-13 14:45:36.822 +05:30 [INF] Executed ViewResult - view ViewMessage executed in 7.3101ms.
+2024-01-13 14:45:36.828 +05:30 [INF] Executed action practice.Controllers.MessageAPIController.ViewMessage (practice) in 33.0438ms
+2024-01-13 14:45:36.841 +05:30 [INF] Executed endpoint 'practice.Controllers.MessageAPIController.ViewMessage (practice)'
+2024-01-13 14:45:36.847 +05:30 [INF] HTTP GET /MessageAPI/ViewMessage responded 200 in 65.3989 ms
+2024-01-13 14:45:36.880 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/MessageAPI/ViewMessage - 200 null text/html; charset=utf-8 110.1852ms
