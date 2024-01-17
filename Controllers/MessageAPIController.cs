@@ -8,7 +8,7 @@ using System.Data;
 using Newtonsoft.Json;
 
 namespace practice.Controllers;
-
+[Log]
 public class MessageAPIController : Controller
 {
     Uri baseAddress = new Uri("http://localhost:5213/api");

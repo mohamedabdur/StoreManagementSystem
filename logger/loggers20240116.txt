@@ -1,0 +1,316 @@
+2024-01-16 17:56:42.045 +05:30 [INF] User profile is available. Using 'C:\Users\mohamed.abdur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-16 17:56:42.130 +05:30 [INF] Now listening on: http://localhost:5277
+2024-01-16 17:56:42.133 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-16 17:56:42.134 +05:30 [INF] Hosting environment: Development
+2024-01-16 17:56:42.135 +05:30 [INF] Content root path: C:\Users\mohamed.abdur\Desktop\SMS\Task-SMS\Project
+2024-01-16 17:56:47.899 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - null null
+2024-01-16 17:56:48.000 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-01-16 17:56:48.069 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 17:56:48.101 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.LoginController (practice).
+2024-01-16 17:56:48.154 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 17:56:48.277 +05:30 [INF] Executed ViewResult - view Index executed in 123.048ms.
+2024-01-16 17:56:48.297 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 193.8023ms
+2024-01-16 17:56:48.302 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 17:56:48.305 +05:30 [INF] HTTP GET / responded 200 in 236.7188 ms
+2024-01-16 17:56:48.316 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/css/site.css?v=FL6kVWk2j-q3ZKwRt0gmHYR5MKqZW5rzVN0D_pEYlpQ - null null
+2024-01-16 17:56:48.316 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/practice.styles.css?v=nL9E3xwSXqe0DQmvRvlMWe8_6aRp6ooCQ0ZncRu3u-s - null null
+2024-01-16 17:56:48.319 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-01-16 17:56:48.319 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/css/home.css?v=TlEAxKmFixR6VvYbcifaOCpONWABtQlRKRWPJuqmjmA - null null
+2024-01-16 17:56:48.332 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - 200 null text/html; charset=utf-8 432.3447ms
+2024-01-16 17:56:48.335 +05:30 [INF] The file /css/site.css was not modified
+2024-01-16 17:56:48.335 +05:30 [INF] The file /practice.styles.css was not modified
+2024-01-16 17:56:48.335 +05:30 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2024-01-16 17:56:48.336 +05:30 [INF] The file /css/home.css was not modified
+2024-01-16 17:56:48.339 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - null null
+2024-01-16 17:56:48.343 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/css/site.css?v=FL6kVWk2j-q3ZKwRt0gmHYR5MKqZW5rzVN0D_pEYlpQ - 304 null text/css 27.5303ms
+2024-01-16 17:56:48.343 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/practice.styles.css?v=nL9E3xwSXqe0DQmvRvlMWe8_6aRp6ooCQ0ZncRu3u-s - 304 null text/css 28.0707ms
+2024-01-16 17:56:48.345 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 26.5767ms
+2024-01-16 17:56:48.346 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/css/home.css?v=TlEAxKmFixR6VvYbcifaOCpONWABtQlRKRWPJuqmjmA - 304 null text/css 27.6751ms
+2024-01-16 17:56:48.349 +05:30 [INF] The file /js/site.js was not modified
+2024-01-16 17:56:48.354 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2024-01-16 17:56:48.362 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-01-16 17:56:48.368 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/lib/jquery/dist/jquery.min.js - null null
+2024-01-16 17:56:48.369 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2024-01-16 17:56:48.370 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - 304 null text/javascript 30.8332ms
+2024-01-16 17:56:48.374 +05:30 [INF] The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js was not modified
+2024-01-16 17:56:48.379 +05:30 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2024-01-16 17:56:48.382 +05:30 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2024-01-16 17:56:48.387 +05:30 [INF] The file /lib/jquery-validation/dist/jquery.validate.min.js was not modified
+2024-01-16 17:56:48.392 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 304 null text/javascript 38.823ms
+2024-01-16 17:56:48.396 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 33.4392ms
+2024-01-16 17:56:48.398 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/lib/jquery/dist/jquery.min.js - 304 null text/javascript 29.8421ms
+2024-01-16 17:56:48.399 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/lib/jquery-validation/dist/jquery.validate.min.js - 304 null text/javascript 29.4501ms
+2024-01-16 17:56:59.034 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5277/ - application/x-www-form-urlencoded 216
+2024-01-16 17:56:59.041 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 17:56:59.049 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(practice.Models.User) on controller practice.Controllers.LoginController (practice).
+2024-01-16 17:57:02.549 +05:30 [INF] Executing RedirectResult, redirecting to /Home.
+2024-01-16 17:57:02.553 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 3502.5065ms
+2024-01-16 17:57:02.554 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 17:57:02.556 +05:30 [INF] HTTP POST / responded 302 in 3514.2599 ms
+2024-01-16 17:57:02.559 +05:30 [INF] Session started; Key:1afe6c0d-40a5-f096-2786-56990ea5dbdc, Id:7d2e2e4c-69b8-e006-7250-da0b8f47699e
+2024-01-16 17:57:02.560 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5277/ - 302 0 null 3526.684ms
+2024-01-16 17:57:02.597 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home - null null
+2024-01-16 17:57:02.600 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 17:57:02.611 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.HomeController (practice).
+2024-01-16 17:57:03.138 +05:30 [INF] Login Successful
+2024-01-16 17:57:03.142 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 17:57:03.181 +05:30 [INF] Executed ViewResult - view Index executed in 40.5804ms.
+2024-01-16 17:57:03.183 +05:30 [INF] Executed action practice.Controllers.HomeController.Index (practice) in 568.0627ms
+2024-01-16 17:57:03.193 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 17:57:03.195 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/images/aspire.png - null null
+2024-01-16 17:57:03.195 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/images/hero.webp - null null
+2024-01-16 17:57:03.199 +05:30 [INF] HTTP GET /Home responded 200 in 599.5793 ms
+2024-01-16 17:57:03.230 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/images/gradient1.jpg - null null
+2024-01-16 17:57:03.234 +05:30 [INF] The file /images/aspire.png was not modified
+2024-01-16 17:57:03.240 +05:30 [INF] The file /images/hero.webp was not modified
+2024-01-16 17:57:03.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home - 200 null text/html; charset=utf-8 648.9824ms
+2024-01-16 17:57:03.247 +05:30 [INF] The file /images/gradient1.jpg was not modified
+2024-01-16 17:57:03.249 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/images/aspire.png - 304 null image/png 54.2246ms
+2024-01-16 17:57:03.250 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/images/hero.webp - 304 null image/webp 54.422ms
+2024-01-16 17:57:03.256 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/images/gradient2.jpg - null null
+2024-01-16 17:57:03.266 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/images/gradient1.jpg - 304 null image/jpeg 35.2607ms
+2024-01-16 17:57:03.284 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/images/gradient3.jpg - null null
+2024-01-16 17:57:03.294 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/images/gradient4.jpg - null null
+2024-01-16 17:57:03.299 +05:30 [INF] The file /images/gradient2.jpg was not modified
+2024-01-16 17:57:03.323 +05:30 [INF] The file /images/gradient3.jpg was not modified
+2024-01-16 17:57:03.329 +05:30 [INF] The file /images/gradient4.jpg was not modified
+2024-01-16 17:57:03.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/images/gradient2.jpg - 304 null image/jpeg 74.0894ms
+2024-01-16 17:57:03.345 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/images/gradient3.jpg - 304 null image/jpeg 61.3307ms
+2024-01-16 17:57:03.372 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/images/gradient4.jpg - 304 null image/jpeg 78.2972ms
+2024-01-16 17:57:05.656 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home/Logout - null null
+2024-01-16 17:57:05.664 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-16 17:57:05.668 +05:30 [ERR] HTTP GET /Home/Logout responded 500 in 6.4274 ms
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-01-16 17:57:05.677 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-16 17:57:05.695 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home/Logout - 500 null text/html; charset=utf-8 38.8611ms
+2024-01-16 17:57:24.810 +05:30 [INF] Application is shutting down...
+2024-01-16 17:57:41.048 +05:30 [INF] User profile is available. Using 'C:\Users\mohamed.abdur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-16 17:57:41.114 +05:30 [INF] Now listening on: http://localhost:5277
+2024-01-16 17:57:41.116 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-16 17:57:41.117 +05:30 [INF] Hosting environment: Development
+2024-01-16 17:57:41.118 +05:30 [INF] Content root path: C:\Users\mohamed.abdur\Desktop\SMS\Task-SMS\Project
+2024-01-16 17:58:21.108 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - null null
+2024-01-16 17:58:21.244 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-01-16 17:58:21.291 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 17:58:21.307 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.LoginController (practice).
+2024-01-16 17:58:21.338 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 17:58:21.424 +05:30 [INF] Executed ViewResult - view Index executed in 88.1821ms.
+2024-01-16 17:58:21.430 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 121.7533ms
+2024-01-16 17:58:21.433 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 17:58:21.438 +05:30 [INF] HTTP GET / responded 200 in 147.3085 ms
+2024-01-16 17:58:21.446 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - 200 null text/html; charset=utf-8 340.7364ms
+2024-01-16 17:58:29.552 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5277/ - application/x-www-form-urlencoded 216
+2024-01-16 17:58:29.561 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 17:58:29.573 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(practice.Models.User) on controller practice.Controllers.LoginController (practice).
+2024-01-16 17:58:30.757 +05:30 [INF] Executing RedirectResult, redirecting to /Home.
+2024-01-16 17:58:30.760 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 1183.2767ms
+2024-01-16 17:58:30.762 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 17:58:30.763 +05:30 [INF] HTTP POST / responded 302 in 1202.8238 ms
+2024-01-16 17:58:30.768 +05:30 [INF] Session started; Key:84ff421a-f583-f6be-27f2-fee0eb45253c, Id:b80e2f79-2c26-88a7-596d-2a86d1d419be
+2024-01-16 17:58:30.770 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5277/ - 302 0 null 1218.2269ms
+2024-01-16 17:58:30.774 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home - null null
+2024-01-16 17:58:30.778 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 17:58:30.781 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.HomeController (practice).
+2024-01-16 17:58:30.874 +05:30 [INF] Login Successful
+2024-01-16 17:58:30.876 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 17:58:30.904 +05:30 [INF] Executed ViewResult - view Index executed in 28.0783ms.
+2024-01-16 17:58:30.906 +05:30 [INF] Executed action practice.Controllers.HomeController.Index (practice) in 121.6319ms
+2024-01-16 17:58:30.907 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 17:58:30.908 +05:30 [INF] HTTP GET /Home responded 200 in 130.7101 ms
+2024-01-16 17:58:30.917 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home - 200 null text/html; charset=utf-8 143.4578ms
+2024-01-16 17:58:32.514 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home/Logout - null null
+2024-01-16 17:58:32.536 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.Logout (practice)'
+2024-01-16 17:58:32.540 +05:30 [INF] Route matched with {action = "Logout", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller practice.Controllers.HomeController (practice).
+2024-01-16 17:58:32.555 +05:30 [INF] Executing RedirectResult, redirecting to /.
+2024-01-16 17:58:32.556 +05:30 [INF] Executed action practice.Controllers.HomeController.Logout (practice) in 12.4174ms
+2024-01-16 17:58:32.557 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.Logout (practice)'
+2024-01-16 17:58:32.558 +05:30 [INF] HTTP GET /Home/Logout responded 302 in 22.6592 ms
+2024-01-16 17:58:32.560 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home/Logout - 302 0 null 45.8036ms
+2024-01-16 17:58:32.565 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - null null
+2024-01-16 17:58:32.569 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 17:58:32.570 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.LoginController (practice).
+2024-01-16 17:58:32.574 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 17:58:32.581 +05:30 [INF] Executed ViewResult - view Index executed in 6.807ms.
+2024-01-16 17:58:32.585 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 12.0288ms
+2024-01-16 17:58:32.587 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 17:58:32.589 +05:30 [INF] HTTP GET / responded 200 in 20.3489 ms
+2024-01-16 17:58:32.593 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - 200 null text/html; charset=utf-8 27.9505ms
+2024-01-16 17:58:41.308 +05:30 [INF] Application is shutting down...
+2024-01-16 19:09:44.436 +05:30 [INF] User profile is available. Using 'C:\Users\mohamed.abdur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-16 19:09:44.604 +05:30 [INF] Now listening on: http://localhost:5277
+2024-01-16 19:09:44.606 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-16 19:09:44.607 +05:30 [INF] Hosting environment: Development
+2024-01-16 19:09:44.608 +05:30 [INF] Content root path: C:\Users\mohamed.abdur\Desktop\SMS\Task-SMS\Project
+2024-01-16 19:10:03.836 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - null null
+2024-01-16 19:10:03.872 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-01-16 19:10:04.005 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 19:10:04.053 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.LoginController (practice).
+2024-01-16 19:10:04.193 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 19:10:04.357 +05:30 [INF] Executed ViewResult - view Index executed in 168.2175ms.
+2024-01-16 19:10:04.368 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 241.4168ms
+2024-01-16 19:10:04.378 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 19:10:04.381 +05:30 [INF] HTTP GET / responded 200 in 377.6252 ms
+2024-01-16 19:10:04.388 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - 200 null text/html; charset=utf-8 558.1705ms
+2024-01-16 19:10:20.840 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5277/ - application/x-www-form-urlencoded 216
+2024-01-16 19:10:20.858 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 19:10:20.891 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(practice.Models.User) on controller practice.Controllers.LoginController (practice).
+2024-01-16 19:10:22.684 +05:30 [INF] Executing RedirectResult, redirecting to /Home.
+2024-01-16 19:10:22.693 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 1794.439ms
+2024-01-16 19:10:22.696 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 19:10:22.699 +05:30 [INF] HTTP POST / responded 302 in 1841.5962 ms
+2024-01-16 19:10:22.713 +05:30 [INF] Session started; Key:b1286ee6-3c08-0858-269b-0ef7a74a0567, Id:fcf07b78-a2d7-fbf2-d59f-a73a93e76c57
+2024-01-16 19:10:22.721 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5277/ - 302 0 null 1881.1353ms
+2024-01-16 19:10:22.731 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home - null null
+2024-01-16 19:10:22.925 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 19:10:22.931 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.HomeController (practice).
+2024-01-16 19:10:23.205 +05:30 [INF] Login Successful
+2024-01-16 19:10:23.212 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 19:10:23.311 +05:30 [INF] Executed ViewResult - view Index executed in 100.4252ms.
+2024-01-16 19:10:23.313 +05:30 [INF] Executed action practice.Controllers.HomeController.Index (practice) in 375.9879ms
+2024-01-16 19:10:23.315 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 19:10:23.320 +05:30 [INF] HTTP GET /Home responded 200 in 392.7192 ms
+2024-01-16 19:10:23.504 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home - 200 null text/html; charset=utf-8 773.1334ms
+2024-01-16 19:10:27.355 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - null null
+2024-01-16 19:10:27.442 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\mohamed.abdur\Desktop\SMS\Task-SMS\Project\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2024-01-16 19:10:27.446 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - 200 327261 text/plain 90.1686ms
+2024-01-16 19:10:32.631 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home - null null
+2024-01-16 19:10:32.650 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 19:10:32.657 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.HomeController (practice).
+2024-01-16 19:10:32.697 +05:30 [INF] Login Successful
+2024-01-16 19:10:32.703 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 19:10:32.715 +05:30 [INF] Executed ViewResult - view Index executed in 12.7558ms.
+2024-01-16 19:10:32.725 +05:30 [INF] Executed action practice.Controllers.HomeController.Index (practice) in 60.595ms
+2024-01-16 19:10:32.819 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 19:10:33.046 +05:30 [INF] HTTP GET /Home responded 200 in 396.4360 ms
+2024-01-16 19:10:33.048 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home - 200 null text/html; charset=utf-8 417.7584ms
+2024-01-16 19:10:35.553 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home/Store - null null
+2024-01-16 19:10:35.568 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.Store (practice)'
+2024-01-16 19:10:35.577 +05:30 [INF] Route matched with {action = "Store", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Store() on controller practice.Controllers.HomeController (practice).
+2024-01-16 19:10:35.777 +05:30 [INF] Executing ViewResult, running view Store.
+2024-01-16 19:10:37.525 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home/SoldHistory - null null
+2024-01-16 19:10:37.538 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.SoldHistory (practice)'
+2024-01-16 19:10:37.545 +05:30 [INF] Route matched with {action = "SoldHistory", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SoldHistory() on controller practice.Controllers.HomeController (practice).
+2024-01-16 19:10:38.703 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home/CustomerRequest - null null
+2024-01-16 19:10:38.716 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.CustomerRequest (practice)'
+2024-01-16 19:10:38.726 +05:30 [INF] Route matched with {action = "CustomerRequest", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CustomerRequest() on controller practice.Controllers.HomeController (practice).
+2024-01-16 19:10:39.445 +05:30 [INF] Executing ViewResult, running view SoldHistory.
+2024-01-16 19:10:40.732 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home/EditUser - null null
+2024-01-16 19:10:40.742 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.EditUser (practice)'
+2024-01-16 19:10:40.748 +05:30 [INF] Route matched with {action = "EditUser", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditUser() on controller practice.Controllers.HomeController (practice).
+2024-01-16 19:10:40.756 +05:30 [INF] Executing ViewResult, running view EditUser.
+2024-01-16 19:10:40.799 +05:30 [INF] Executed ViewResult - view EditUser executed in 44.1154ms.
+2024-01-16 19:10:40.804 +05:30 [INF] Executed action practice.Controllers.HomeController.EditUser (practice) in 50.3501ms
+2024-01-16 19:10:40.805 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.EditUser (practice)'
+2024-01-16 19:10:40.807 +05:30 [INF] HTTP GET /Home/EditUser responded 200 in 65.0755 ms
+2024-01-16 19:10:40.809 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home/EditUser - 200 null text/html; charset=utf-8 76.9895ms
+2024-01-16 19:10:40.842 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/css/edituser.css?v=R4vOmCJPvCJpJeIrSETFeaXAqywloI-MUaXojOTTNng - null null
+2024-01-16 19:10:40.894 +05:30 [INF] The file /css/edituser.css was not modified
+2024-01-16 19:10:40.896 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/css/edituser.css?v=R4vOmCJPvCJpJeIrSETFeaXAqywloI-MUaXojOTTNng - 304 null text/css 53.9735ms
+2024-01-16 19:10:40.954 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/lib/bootstrap/dist/css/bootstrap.min.css.map - null null
+2024-01-16 19:10:40.969 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\mohamed.abdur\Desktop\SMS\Task-SMS\Project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2024-01-16 19:10:41.004 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/lib/bootstrap/dist/css/bootstrap.min.css.map - 200 449111 text/plain 49.6971ms
+2024-01-16 19:10:44.427 +05:30 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[productid], [c].[customername], [c].[productname], [c].[quantity], [c].[senddate], [c].[status]
+FROM [CustomerRequest] AS [c]
+WHERE [c].[status] = N'Pending'
+2024-01-16 19:10:44.427 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[productid], [c].[customername], [c].[productname], [c].[quantity], [c].[senddate], [c].[status]
+FROM [CustomerRequest] AS [c]
+WHERE [c].[status] = N'Accepted'
+2024-01-16 19:10:44.427 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[productid], [p].[productcategory], [p].[productname], [p].[quantity], [p].[recieveddate], [p].[supplierPhoneNumber], [p].[suppliername]
+FROM [Products] AS [p]
+2024-01-16 19:10:44.495 +05:30 [INF] Executing ViewResult, running view CustomerRequest.
+2024-01-16 19:10:44.540 +05:30 [INF] Executed ViewResult - view CustomerRequest executed in 45.4426ms.
+2024-01-16 19:10:44.543 +05:30 [INF] Executed action practice.Controllers.HomeController.CustomerRequest (practice) in 5809.1101ms
+2024-01-16 19:10:44.560 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.CustomerRequest (practice)'
+2024-01-16 19:10:44.576 +05:30 [INF] Executed ViewResult - view SoldHistory executed in 5132.1796ms.
+2024-01-16 19:10:44.576 +05:30 [INF] HTTP GET /Home/CustomerRequest responded 200 in 5860.0077 ms
+2024-01-16 19:10:44.579 +05:30 [INF] Executed action practice.Controllers.HomeController.SoldHistory (practice) in 7027.9382ms
+2024-01-16 19:10:44.590 +05:30 [INF] Executed ViewResult - view Store executed in 8815.3025ms.
+2024-01-16 19:10:44.593 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.SoldHistory (practice)'
+2024-01-16 19:10:44.604 +05:30 [INF] Executed action practice.Controllers.HomeController.Store (practice) in 8853.6934ms
+2024-01-16 19:10:44.607 +05:30 [INF] HTTP GET /Home/SoldHistory responded 200 in 7068.9449 ms
+2024-01-16 19:10:44.610 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.Store (practice)'
+2024-01-16 19:10:44.618 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home/SoldHistory - 200 null text/html; charset=utf-8 7092.8901ms
+2024-01-16 19:10:44.618 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home/CustomerRequest - 200 null text/html; charset=utf-8 5914.3157ms
+2024-01-16 19:10:44.620 +05:30 [INF] HTTP GET /Home/Store responded 200 in 9051.4883 ms
+2024-01-16 19:10:44.650 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home/Store - 200 null text/html; charset=utf-8 9096.3186ms
+2024-01-16 19:11:09.677 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home - null null
+2024-01-16 19:11:09.686 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 19:11:09.693 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.HomeController (practice).
+2024-01-16 19:11:09.704 +05:30 [INF] Login Successful
+2024-01-16 19:11:09.715 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 19:11:09.720 +05:30 [INF] Executed ViewResult - view Index executed in 5.6664ms.
+2024-01-16 19:11:09.834 +05:30 [INF] Executed action practice.Controllers.HomeController.Index (practice) in 130.8675ms
+2024-01-16 19:11:09.836 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 19:11:09.838 +05:30 [INF] HTTP GET /Home responded 200 in 151.8410 ms
+2024-01-16 19:11:09.843 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home - 200 null text/html; charset=utf-8 165.9107ms
+2024-01-16 19:24:02.519 +05:30 [INF] Application is shutting down...
+2024-01-16 19:24:16.697 +05:30 [INF] User profile is available. Using 'C:\Users\mohamed.abdur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-16 19:24:16.801 +05:30 [INF] Now listening on: http://localhost:5277
+2024-01-16 19:24:16.808 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-16 19:24:16.810 +05:30 [INF] Hosting environment: Development
+2024-01-16 19:24:16.811 +05:30 [INF] Content root path: C:\Users\mohamed.abdur\Desktop\SMS\Task-SMS\Project
+2024-01-16 19:24:23.958 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - null null
+2024-01-16 19:24:23.976 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-01-16 19:24:24.009 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 19:24:24.069 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.LoginController (practice).
+2024-01-16 19:24:24.149 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 19:24:24.249 +05:30 [INF] Executed ViewResult - view Index executed in 100.7734ms.
+2024-01-16 19:24:24.271 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 198.0598ms
+2024-01-16 19:24:24.276 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 19:24:24.279 +05:30 [INF] HTTP GET / responded 200 in 272.5932 ms
+2024-01-16 19:24:24.303 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - 200 null text/html; charset=utf-8 347.8938ms
+2024-01-16 19:26:16.677 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5277/ - application/x-www-form-urlencoded 216
+2024-01-16 19:26:16.687 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 19:26:16.724 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(practice.Models.User) on controller practice.Controllers.LoginController (practice).
+2024-01-16 19:26:17.149 +05:30 [INF] Accessing expired session, Key:b1286ee6-3c08-0858-269b-0ef7a74a0567
+2024-01-16 19:26:17.177 +05:30 [INF] Executing RedirectResult, redirecting to /Home.
+2024-01-16 19:26:17.190 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 448.1917ms
+2024-01-16 19:26:17.197 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 19:26:17.202 +05:30 [INF] HTTP POST / responded 302 in 515.2980 ms
+2024-01-16 19:26:17.219 +05:30 [INF] Session started; Key:b1286ee6-3c08-0858-269b-0ef7a74a0567, Id:987186f9-f529-def7-bf81-3fc52a097ad0
+2024-01-16 19:26:17.224 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5277/ - 302 0 null 547.1178ms
+2024-01-16 19:26:17.240 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/Home - null null
+2024-01-16 19:26:17.260 +05:30 [INF] Executing endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 19:26:17.276 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.HomeController (practice).
+2024-01-16 19:26:17.601 +05:30 [INF] Login Successful
+2024-01-16 19:26:17.610 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 19:26:17.707 +05:30 [INF] Executed ViewResult - view Index executed in 99.154ms.
+2024-01-16 19:26:17.710 +05:30 [INF] Executed action practice.Controllers.HomeController.Index (practice) in 411.6738ms
+2024-01-16 19:26:17.716 +05:30 [INF] Executed endpoint 'practice.Controllers.HomeController.Index (practice)'
+2024-01-16 19:26:17.727 +05:30 [INF] HTTP GET /Home responded 200 in 466.4402 ms
+2024-01-16 19:26:17.749 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/Home - 200 null text/html; charset=utf-8 509.1267ms
+2024-01-16 19:30:23.926 +05:30 [INF] Application is shutting down...
+2024-01-16 19:30:44.529 +05:30 [INF] User profile is available. Using 'C:\Users\mohamed.abdur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-16 19:30:44.615 +05:30 [INF] Now listening on: http://localhost:5277
+2024-01-16 19:30:44.618 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-16 19:30:44.619 +05:30 [INF] Hosting environment: Development
+2024-01-16 19:30:44.620 +05:30 [INF] Content root path: C:\Users\mohamed.abdur\Desktop\SMS\Task-SMS\Project
+2024-01-16 19:30:58.011 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - null null
+2024-01-16 19:30:58.031 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-01-16 19:30:58.090 +05:30 [INF] Executing endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 19:30:58.123 +05:30 [INF] Route matched with {action = "Index", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller practice.Controllers.LoginController (practice).
+2024-01-16 19:30:58.201 +05:30 [INF] Executing ViewResult, running view Index.
+2024-01-16 19:30:58.297 +05:30 [INF] Executed ViewResult - view Index executed in 98.3057ms.
+2024-01-16 19:30:58.373 +05:30 [INF] Executed action practice.Controllers.LoginController.Index (practice) in 193.5904ms
+2024-01-16 19:30:58.385 +05:30 [INF] Executed endpoint 'practice.Controllers.LoginController.Index (practice)'
+2024-01-16 19:30:58.389 +05:30 [INF] HTTP GET / responded 200 in 305.6470 ms
+2024-01-16 19:30:58.454 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - 200 null text/html; charset=utf-8 441.7056ms

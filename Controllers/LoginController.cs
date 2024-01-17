@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using practice.Models;
 
 namespace practice.Controllers;
-
+[Log]
 public class LoginController : Controller
 {
      private readonly ILogger<HomeController> _logger;

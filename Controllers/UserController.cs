@@ -13,6 +13,7 @@ using System.Net.Http;
 
 namespace practice.Controllers;
 
+[Log]
 public class UserController : Controller
 {
     private readonly ILogger<HomeController> _logger;

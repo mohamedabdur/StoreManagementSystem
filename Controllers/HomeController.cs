@@ -5,9 +5,10 @@ using practice.Data;
 using practice.Models;
 using System.Data;
 using Serilog;
+using Microsoft.AspNetCore.Authorization;
 
 namespace practice.Controllers;
-
+[Log]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -147,7 +148,6 @@ public class HomeController : Controller
     }
 
     // Logout
-
     public IActionResult Logout()
     {
         HttpContext.Session.SetString("Session", "");
