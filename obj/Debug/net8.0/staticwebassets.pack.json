@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\practice.bundle.scp.css",
-      "PackagePath": "staticwebassets\\practice.bundle.scp.css"
+      "Id": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Practice.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Practice.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\wwwroot\\css\\Userindex.css",
@@ -341,20 +341,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.practice.props",
-      "PackagePath": "build\\practice.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.practice.props",
-      "PackagePath": "buildMultiTargeting\\practice.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.practice.props",
-      "PackagePath": "buildTransitive\\practice.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.practice.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Practice.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Practice.props",
+      "PackagePath": "build\\Practice.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Practice.props",
+      "PackagePath": "buildMultiTargeting\\Practice.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Practice.props",
+      "PackagePath": "buildTransitive\\Practice.props"
     }
   ],
   "ElementsToRemove": []

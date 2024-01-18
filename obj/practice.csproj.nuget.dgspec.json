@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\practice.csproj": {}
+    "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\Practice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\practice.csproj": {
+    "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\practice.csproj",
-        "projectName": "practice",
-        "projectPath": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\practice.csproj",
+        "projectUniqueName": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\Practice.csproj",
+        "projectName": "Practice",
+        "projectPath": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\Practice.csproj",
         "packagesPath": "C:\\Users\\mohamed.abdur\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\obj\\",
         "projectStyle": "PackageReference",

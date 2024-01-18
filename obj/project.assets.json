@@ -11478,9 +11478,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\practice.csproj",
-      "projectName": "practice",
-      "projectPath": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\practice.csproj",
+      "projectUniqueName": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\Practice.csproj",
+      "projectName": "Practice",
+      "projectPath": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\Practice.csproj",
       "packagesPath": "C:\\Users\\mohamed.abdur\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mohamed.abdur\\Desktop\\SMS\\Task-SMS\\Project\\obj\\",
       "projectStyle": "PackageReference",
@@ -11602,6 +11602,16 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.SqlClient' 4.8.5 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
